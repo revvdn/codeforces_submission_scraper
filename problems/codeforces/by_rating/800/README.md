@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 282A | [Bit++](https://codeforces.com/problemset/problem/282/A) | [Submission](https://codeforces.com/contest/282/submission/281610608) | implementation | Sep/17/2024 08:09 PM |
 | 231A | [Team](https://codeforces.com/problemset/problem/231/A) | [Submission](https://codeforces.com/contest/231/submission/281576295) | brute force, greedy | Sep/17/2024 02:59 PM |
 | 71A | [Way Too Long Words](https://codeforces.com/problemset/problem/71/A) | [Submission](https://codeforces.com/contest/71/submission/281575234) | strings | Sep/17/2024 02:50 PM |
 | 1985B | [Maximum Multiple Sum](https://codeforces.com/problemset/problem/1985/B) | [Submission](https://codeforces.com/contest/1985/submission/279748866) | brute force, math, number theory | Sep/04/2024 11:30 AM |
