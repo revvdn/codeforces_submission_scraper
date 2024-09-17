@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 112A | [Petya and Strings](https://codeforces.com/problemset/problem/112/A) | [Submission](https://codeforces.com/contest/112/submission/281616678) | implementation, strings | Sep/17/2024 08:54 PM |
 | 263A | [Beautiful Matrix](https://codeforces.com/problemset/problem/263/A) | [Submission](https://codeforces.com/contest/263/submission/281613750) | implementation | Sep/17/2024 08:32 PM |
 | 50A | [Domino piling](https://codeforces.com/problemset/problem/50/A) | [Submission](https://codeforces.com/contest/50/submission/281612864) | greedy, math | Sep/17/2024 08:26 PM |
 | 158A | [Next Round](https://codeforces.com/problemset/problem/158/A) | [Submission](https://codeforces.com/contest/158/submission/281612375) | *special, implementation | Sep/17/2024 08:22 PM |
