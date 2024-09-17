@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 50A | [Domino piling](https://codeforces.com/problemset/problem/50/A) | [Submission](https://codeforces.com/contest/50/submission/281612864) | greedy, math | Sep/17/2024 08:26 PM |
 | 158A | [Next Round](https://codeforces.com/problemset/problem/158/A) | [Submission](https://codeforces.com/contest/158/submission/281612375) | *special, implementation | Sep/17/2024 08:22 PM |
 | 282A | [Bit++](https://codeforces.com/problemset/problem/282/A) | [Submission](https://codeforces.com/contest/282/submission/281610608) | implementation | Sep/17/2024 08:09 PM |
 | 231A | [Team](https://codeforces.com/problemset/problem/231/A) | [Submission](https://codeforces.com/contest/231/submission/281576295) | brute force, greedy | Sep/17/2024 02:59 PM |
