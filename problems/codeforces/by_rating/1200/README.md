@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1352C | [K-th Not Divisible by n](https://codeforces.com/problemset/problem/1352/C) | [Submission](https://codeforces.com/contest/1352/submission/281752398) | binary search, math | Sep/18/2024 09:46 PM |
 | 466A | [Cheap Travel](https://codeforces.com/problemset/problem/466/A) | [Submission](https://codeforces.com/contest/466/submission/281749725) | implementation | Sep/18/2024 09:25 PM |
 | 492B | [Vanya and Lanterns](https://codeforces.com/problemset/problem/492/B) | [Submission](https://codeforces.com/contest/492/submission/281748495) | binary search, implementation, math, sortings | Sep/18/2024 09:16 PM |
 | 459A | [Pashmak and Garden](https://codeforces.com/problemset/problem/459/A) | [Submission](https://codeforces.com/contest/459/submission/281683169) | implementation | Sep/18/2024 10:09 AM |
