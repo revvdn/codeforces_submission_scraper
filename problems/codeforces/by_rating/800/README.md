@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1712A | [Wonderful Permutation](https://codeforces.com/problemset/problem/1712/A) | [Submission](https://codeforces.com/contest/1712/submission/281820740) | greedy, implementation | Sep/19/2024 01:28 PM |
 | 1743A | [Password](https://codeforces.com/problemset/problem/1743/A) | [Submission](https://codeforces.com/contest/1743/submission/281804751) | brute force, combinatorics, implementation, math | Sep/19/2024 09:14 AM |
 | 281A | [Word Capitalization](https://codeforces.com/problemset/problem/281/A) | [Submission](https://codeforces.com/contest/281/submission/281617780) | implementation, strings | Sep/17/2024 09:02 PM |
 | 339A | [Helpful Maths](https://codeforces.com/problemset/problem/339/A) | [Submission](https://codeforces.com/contest/339/submission/281617191) | greedy, implementation, sortings, strings | Sep/17/2024 08:58 PM |
