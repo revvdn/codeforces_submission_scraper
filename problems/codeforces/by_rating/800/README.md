@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1743A | [Password](https://codeforces.com/problemset/problem/1743/A) | [Submission](https://codeforces.com/contest/1743/submission/281804751) | brute force, combinatorics, implementation, math | Sep/19/2024 09:14 AM |
 | 281A | [Word Capitalization](https://codeforces.com/problemset/problem/281/A) | [Submission](https://codeforces.com/contest/281/submission/281617780) | implementation, strings | Sep/17/2024 09:02 PM |
 | 339A | [Helpful Maths](https://codeforces.com/problemset/problem/339/A) | [Submission](https://codeforces.com/contest/339/submission/281617191) | greedy, implementation, sortings, strings | Sep/17/2024 08:58 PM |
 | 112A | [Petya and Strings](https://codeforces.com/problemset/problem/112/A) | [Submission](https://codeforces.com/contest/112/submission/281616678) | implementation, strings | Sep/17/2024 08:54 PM |
