@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 9A | [Die Roll](https://codeforces.com/problemset/problem/9/A) | [Submission](https://codeforces.com/contest/9/submission/281932070) | math, probabilities | Sep/20/2024 10:34 AM |
 | 1712A | [Wonderful Permutation](https://codeforces.com/problemset/problem/1712/A) | [Submission](https://codeforces.com/contest/1712/submission/281820740) | greedy, implementation | Sep/19/2024 01:28 PM |
 | 1743A | [Password](https://codeforces.com/problemset/problem/1743/A) | [Submission](https://codeforces.com/contest/1743/submission/281804751) | brute force, combinatorics, implementation, math | Sep/19/2024 09:14 AM |
 | 281A | [Word Capitalization](https://codeforces.com/problemset/problem/281/A) | [Submission](https://codeforces.com/contest/281/submission/281617780) | implementation, strings | Sep/17/2024 09:02 PM |
