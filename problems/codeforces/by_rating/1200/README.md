@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1294B | [Collecting Packages](https://codeforces.com/problemset/problem/1294/B) | [Submission](https://codeforces.com/contest/1294/submission/282181744) | implementation, sortings | Sep/21/2024 03:55 PM |
 | 1454C | [Sequence Transformation](https://codeforces.com/problemset/problem/1454/C) | [Submission](https://codeforces.com/contest/1454/submission/282181619) | greedy, implementation | Sep/21/2024 03:54 PM |
 | 1619C | [Wrong Addition](https://codeforces.com/problemset/problem/1619/C) | [Submission](https://codeforces.com/contest/1619/submission/282181460) | implementation | Sep/21/2024 03:53 PM |
 | 1334A | [Level Statistics](https://codeforces.com/problemset/problem/1334/A) | [Submission](https://codeforces.com/contest/1334/submission/281822864) | implementation, math | Sep/19/2024 01:51 PM |
