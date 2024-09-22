@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1629B | [GCD Arrays](https://codeforces.com/problemset/problem/1629/B) | [Submission](https://codeforces.com/contest/1629/submission/282429602) | greedy, math, number theory | Sep/22/2024 01:27 PM |
 | 1311A | [Add Odd or Subtract Even](https://codeforces.com/problemset/problem/1311/A) | [Submission](https://codeforces.com/contest/1311/submission/282428723) | greedy, implementation, math | Sep/22/2024 01:17 PM |
 | 9A | [Die Roll](https://codeforces.com/problemset/problem/9/A) | [Submission](https://codeforces.com/contest/9/submission/281932070) | math, probabilities | Sep/20/2024 10:34 AM |
 | 1712A | [Wonderful Permutation](https://codeforces.com/problemset/problem/1712/A) | [Submission](https://codeforces.com/contest/1712/submission/281820740) | greedy, implementation | Sep/19/2024 01:28 PM |
