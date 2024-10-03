@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1926B | [Vlad and Shapes](https://codeforces.com/problemset/problem/1926/B) | [Submission](https://codeforces.com/contest/1926/submission/284234805) | geometry, implementation | Oct/04/2024 03:47 AM |
 | 791A | [Bear and Big Brother](https://codeforces.com/problemset/problem/791/A) | [Submission](https://codeforces.com/contest/791/submission/282720153) | implementation | Sep/24/2024 12:58 PM |
 | 1629B | [GCD Arrays](https://codeforces.com/problemset/problem/1629/B) | [Submission](https://codeforces.com/contest/1629/submission/282429602) | greedy, math, number theory | Sep/22/2024 01:27 PM |
 | 1311A | [Add Odd or Subtract Even](https://codeforces.com/problemset/problem/1311/A) | [Submission](https://codeforces.com/contest/1311/submission/282428723) | greedy, implementation, math | Sep/22/2024 01:17 PM |
