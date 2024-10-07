@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2020B | [Brightness Begins](https://codeforces.com/problemset/problem/2020/B) | [Submission](https://codeforces.com/contest/2020/submission/284844354) | binary search, math | Oct/08/2024 03:59 AM |
 | 433B | [Kuriyama Mirai's Stones](https://codeforces.com/problemset/problem/433/B) | [Submission](https://codeforces.com/contest/433/submission/284711298) | dp, implementation, sortings | Oct/07/2024 09:01 AM |
 | 1713C | [Build Permutation](https://codeforces.com/problemset/problem/1713/C) | [Submission](https://codeforces.com/contest/1713/submission/283103112) | constructive algorithms, dp, math | Sep/27/2024 03:34 AM |
 | 1294B | [Collecting Packages](https://codeforces.com/problemset/problem/1294/B) | [Submission](https://codeforces.com/contest/1294/submission/282181744) | implementation, sortings | Sep/21/2024 03:55 PM |
