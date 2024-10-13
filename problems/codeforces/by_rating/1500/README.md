@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1876B | [Effects of Anti Pimples](https://codeforces.com/problemset/problem/1876/B) | [Submission](https://codeforces.com/contest/1876/submission/285574597) | combinatorics, number theory, sortings | Oct/13/2024 10:44 AM |
 | 771A | [Bear and Friendship Condition](https://codeforces.com/problemset/problem/771/A) | [Submission](https://codeforces.com/contest/771/submission/285411407) | dfs and similar, dsu, graphs | Oct/12/2024 01:11 PM |
 | 977E | [Cyclic Components](https://codeforces.com/problemset/problem/977/E) | [Submission](https://codeforces.com/contest/977/submission/285399556) | dfs and similar, dsu, graphs | Oct/12/2024 10:42 AM |
 | 670D2 | [Magic Powder - 2](https://codeforces.com/problemset/problem/670/D2) | [Submission](https://codeforces.com/contest/670/submission/284981508) | binary search, implementation | Oct/09/2024 10:22 AM |
