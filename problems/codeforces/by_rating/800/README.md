@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2025A | [Two Screens](https://codeforces.com/problemset/problem/2025/A) | [Submission](https://codeforces.com/contest/2025/submission/285890068) | binary search, greedy, strings, two pointers | Oct/14/2024 10:29 PM |
 | 59A | [Word](https://codeforces.com/problemset/problem/59/A) | [Submission](https://codeforces.com/contest/59/submission/285837383) | implementation, strings | Oct/14/2024 09:03 PM |
 | 271A | [Beautiful Year](https://codeforces.com/problemset/problem/271/A) | [Submission](https://codeforces.com/contest/271/submission/284931223) | brute force | Oct/08/2024 09:23 PM |
 | 32B | [Borze](https://codeforces.com/problemset/problem/32/B) | [Submission](https://codeforces.com/contest/32/submission/284929131) | expression parsing, implementation | Oct/08/2024 09:10 PM |
