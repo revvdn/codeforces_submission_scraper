@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 59A | [Word](https://codeforces.com/problemset/problem/59/A) | [Submission](https://codeforces.com/contest/59/submission/285837383) | implementation, strings | Oct/14/2024 09:03 PM |
 | 271A | [Beautiful Year](https://codeforces.com/problemset/problem/271/A) | [Submission](https://codeforces.com/contest/271/submission/284931223) | brute force | Oct/08/2024 09:23 PM |
 | 32B | [Borze](https://codeforces.com/problemset/problem/32/B) | [Submission](https://codeforces.com/contest/32/submission/284929131) | expression parsing, implementation | Oct/08/2024 09:10 PM |
 | 266B | [Queue at the School](https://codeforces.com/problemset/problem/266/B) | [Submission](https://codeforces.com/contest/266/submission/284927986) | constructive algorithms, graph matchings, implementation, shortest paths | Oct/08/2024 09:03 PM |
