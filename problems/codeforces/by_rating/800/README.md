@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1814A | [Coins](https://codeforces.com/problemset/problem/1814/A) | [Submission](https://codeforces.com/contest/1814/submission/286461319) | implementation, math | Oct/18/2024 08:49 AM |
 | 1150A | [Stock Arbitraging](https://codeforces.com/problemset/problem/1150/A) | [Submission](https://codeforces.com/contest/1150/submission/286307789) | greedy, implementation | Oct/17/2024 09:15 AM |
 | 2025A | [Two Screens](https://codeforces.com/problemset/problem/2025/A) | [Submission](https://codeforces.com/contest/2025/submission/285890068) | binary search, greedy, strings, two pointers | Oct/14/2024 10:29 PM |
 | 59A | [Word](https://codeforces.com/problemset/problem/59/A) | [Submission](https://codeforces.com/contest/59/submission/285837383) | implementation, strings | Oct/14/2024 09:03 PM |
