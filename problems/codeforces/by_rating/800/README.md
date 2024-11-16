@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2029A | [Set](https://codeforces.com/problemset/problem/2029/A) | [Submission](https://codeforces.com/contest/2029/submission/291799825) | greedy, math | Nov/16/2024 08:18 PM |
 | 361A | [Levko and Table](https://codeforces.com/problemset/problem/361/A) | [Submission](https://codeforces.com/contest/361/submission/287604617) | constructive algorithms, implementation | Oct/24/2024 11:07 AM |
 | 1814A | [Coins](https://codeforces.com/problemset/problem/1814/A) | [Submission](https://codeforces.com/contest/1814/submission/286461319) | implementation, math | Oct/18/2024 08:49 AM |
 | 1150A | [Stock Arbitraging](https://codeforces.com/problemset/problem/1150/A) | [Submission](https://codeforces.com/contest/1150/submission/286307789) | greedy, implementation | Oct/17/2024 09:15 AM |
