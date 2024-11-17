@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2037C | [Superultra's Favorite Permutation](https://codeforces.com/problemset/problem/2037/C) | [Submission](https://codeforces.com/contest/2037/submission/292050975) | constructive algorithms, greedy, math, number theory | Nov/17/2024 11:09 PM |
 | 1A | [Theatre Square](https://codeforces.com/problemset/problem/1/A) | [Submission](https://codeforces.com/contest/1/submission/286460001) | math | Oct/18/2024 08:23 AM |
 | 69A | [Young Physicist](https://codeforces.com/problemset/problem/69/A) | [Submission](https://codeforces.com/contest/69/submission/284923434) | implementation, math | Oct/08/2024 08:37 PM |
 | 1968C | [Assembly via Remainders](https://codeforces.com/problemset/problem/1968/C) | [Submission](https://codeforces.com/contest/1968/submission/284264885) | constructive algorithms, number theory | Oct/04/2024 01:10 PM |
