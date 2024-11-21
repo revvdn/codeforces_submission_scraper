@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1325C | [Ehab and Path-etic MEXs](https://codeforces.com/problemset/problem/1325/C) | [Submission](https://codeforces.com/contest/1325/submission/292630741) | constructive algorithms, dfs and similar, greedy, trees | Nov/21/2024 08:42 PM |
 | 1999F | [Expected Median](https://codeforces.com/problemset/problem/1999/F) | [Submission](https://codeforces.com/contest/1999/submission/285576514) | combinatorics, math | Oct/13/2024 11:16 AM |
 | 1876B | [Effects of Anti Pimples](https://codeforces.com/problemset/problem/1876/B) | [Submission](https://codeforces.com/contest/1876/submission/285574597) | combinatorics, number theory, sortings | Oct/13/2024 10:44 AM |
 | 771A | [Bear and Friendship Condition](https://codeforces.com/problemset/problem/771/A) | [Submission](https://codeforces.com/contest/771/submission/285411407) | dfs and similar, dsu, graphs | Oct/12/2024 01:11 PM |
