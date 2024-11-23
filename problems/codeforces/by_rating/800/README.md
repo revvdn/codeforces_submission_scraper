@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1932A | [Thorns and Coins](https://codeforces.com/problemset/problem/1932/A) | [Submission](https://codeforces.com/contest/1932/submission/292899816) | dp, greedy, implementation | Nov/23/2024 08:50 PM |
 | 2037B | [Intercepted Inputs](https://codeforces.com/problemset/problem/2037/B) | [Submission](https://codeforces.com/contest/2037/submission/291998908) | brute force, implementation | Nov/17/2024 10:12 PM |
 | 2037A | [Twice](https://codeforces.com/problemset/problem/2037/A) | [Submission](https://codeforces.com/contest/2037/submission/291983847) | implementation | Nov/17/2024 09:59 PM |
 | 2029A | [Set](https://codeforces.com/problemset/problem/2029/A) | [Submission](https://codeforces.com/contest/2029/submission/291799825) | greedy, math | Nov/16/2024 08:18 PM |
