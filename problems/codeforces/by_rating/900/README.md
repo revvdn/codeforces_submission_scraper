@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1057A | [Bmail Computer Network](https://codeforces.com/problemset/problem/1057/A) | [Submission](https://codeforces.com/contest/1057/submission/292883861) | *special, dfs and similar, trees | Nov/23/2024 06:33 PM |
 | 115A | [Party](https://codeforces.com/problemset/problem/115/A) | [Submission](https://codeforces.com/contest/115/submission/292873078) | dfs and similar, graphs, trees | Nov/23/2024 04:51 PM |
 | 275A | [Lights Out](https://codeforces.com/problemset/problem/275/A) | [Submission](https://codeforces.com/contest/275/submission/285835259) | implementation | Oct/14/2024 08:49 PM |
 | 1606A | [AB Balance](https://codeforces.com/problemset/problem/1606/A) | [Submission](https://codeforces.com/contest/1606/submission/282434013) | strings | Sep/22/2024 02:23 PM |
