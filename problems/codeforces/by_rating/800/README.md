@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1923A | [Moving Chips](https://codeforces.com/problemset/problem/1923/A) | [Submission](https://codeforces.com/contest/1923/submission/295498025) | greedy, implementation | Dec/08/2024 01:57 PM |
 | 236A | [Boy or Girl](https://codeforces.com/problemset/problem/236/A) | [Submission](https://codeforces.com/contest/236/submission/293629688) | brute force, implementation, strings | Nov/28/2024 05:45 PM |
 | 1932A | [Thorns and Coins](https://codeforces.com/problemset/problem/1932/A) | [Submission](https://codeforces.com/contest/1932/submission/292899816) | dp, greedy, implementation | Nov/23/2024 08:50 PM |
 | 2037B | [Intercepted Inputs](https://codeforces.com/problemset/problem/2037/B) | [Submission](https://codeforces.com/contest/2037/submission/291998908) | brute force, implementation | Nov/17/2024 10:12 PM |
