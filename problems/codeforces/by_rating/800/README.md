@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2043A | [Coin Transformation](https://codeforces.com/problemset/problem/2043/A) | [Submission](https://codeforces.com/contest/2043/submission/298805003) | brute force, math | Dec/28/2024 09:09 PM |
 | 1923A | [Moving Chips](https://codeforces.com/problemset/problem/1923/A) | [Submission](https://codeforces.com/contest/1923/submission/295498025) | greedy, implementation | Dec/08/2024 01:57 PM |
 | 236A | [Boy or Girl](https://codeforces.com/problemset/problem/236/A) | [Submission](https://codeforces.com/contest/236/submission/293629688) | brute force, implementation, strings | Nov/28/2024 05:45 PM |
 | 1932A | [Thorns and Coins](https://codeforces.com/problemset/problem/1932/A) | [Submission](https://codeforces.com/contest/1932/submission/292899816) | dp, greedy, implementation | Nov/23/2024 08:50 PM |
