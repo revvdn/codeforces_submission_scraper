@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1327B | [Princesses and Princes](https://codeforces.com/problemset/problem/1327/B) | [Submission](https://codeforces.com/contest/1327/submission/298967393) | brute force, graphs, greedy | Dec/29/2024 08:04 PM |
 | 776B | [Sherlock and his girlfriend](https://codeforces.com/problemset/problem/776/B) | [Submission](https://codeforces.com/contest/776/submission/291898450) | constructive algorithms, number theory | Nov/17/2024 02:40 PM |
 | 1843D | [Apple Tree](https://codeforces.com/problemset/problem/1843/D) | [Submission](https://codeforces.com/contest/1843/submission/287447682) | combinatorics, dfs and similar, dp, math, trees | Oct/23/2024 09:09 AM |
 | 2020B | [Brightness Begins](https://codeforces.com/problemset/problem/2020/B) | [Submission](https://codeforces.com/contest/2020/submission/284844354) | binary search, math | Oct/08/2024 03:59 AM |
