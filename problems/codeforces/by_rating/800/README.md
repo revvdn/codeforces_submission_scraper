@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 228A | [Is your horseshoe on the other hoof?](https://codeforces.com/problemset/problem/228/A) | [Submission](https://codeforces.com/contest/228/submission/299091343) | implementation | Dec/30/2024 11:35 PM |
 | 2043A | [Coin Transformation](https://codeforces.com/problemset/problem/2043/A) | [Submission](https://codeforces.com/contest/2043/submission/298805003) | brute force, math | Dec/28/2024 09:09 PM |
 | 1923A | [Moving Chips](https://codeforces.com/problemset/problem/1923/A) | [Submission](https://codeforces.com/contest/1923/submission/295498025) | greedy, implementation | Dec/08/2024 01:57 PM |
 | 236A | [Boy or Girl](https://codeforces.com/problemset/problem/236/A) | [Submission](https://codeforces.com/contest/236/submission/293629688) | brute force, implementation, strings | Nov/28/2024 05:45 PM |
