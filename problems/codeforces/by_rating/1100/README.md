@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2043B | [Digits](https://codeforces.com/problemset/problem/2043/B) | [Submission](https://codeforces.com/contest/2043/submission/299478651) | math, number theory | Jan/03/2025 09:02 PM |
 | 331C1 | [The Great Julya Calendar](https://codeforces.com/problemset/problem/331/C1) | [Submission](https://codeforces.com/contest/331/submission/293350607) | dp | Nov/26/2024 06:48 PM |
 | 2014C | [Robin Hood in Town](https://codeforces.com/problemset/problem/2014/C) | [Submission](https://codeforces.com/contest/2014/submission/286655344) | binary search, greedy, math | Oct/19/2024 02:08 PM |
 | 2025B | [Binomial Coefficients, Kind Of](https://codeforces.com/problemset/problem/2025/B) | [Submission](https://codeforces.com/contest/2025/submission/285905594) | combinatorics, dp, math | Oct/14/2024 10:53 PM |
