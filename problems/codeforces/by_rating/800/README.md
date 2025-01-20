@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 141A | [Amusing Joke](https://codeforces.com/problemset/problem/141/A) | [Submission](https://codeforces.com/contest/141/submission/301935009) | implementation, sortings, strings | Jan/20/2025 08:53 AM |
 | 110A | [Nearly Lucky Number](https://codeforces.com/problemset/problem/110/A) | [Submission](https://codeforces.com/contest/110/submission/301931791) | implementation | Jan/20/2025 08:03 AM |
 | 432A | [Choosing Teams](https://codeforces.com/problemset/problem/432/A) | [Submission](https://codeforces.com/contest/432/submission/301931204) | greedy, implementation, sortings | Jan/20/2025 07:52 AM |
 | 228A | [Is your horseshoe on the other hoof?](https://codeforces.com/problemset/problem/228/A) | [Submission](https://codeforces.com/contest/228/submission/299091343) | implementation | Dec/30/2024 11:35 PM |
