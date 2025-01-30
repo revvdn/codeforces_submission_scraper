@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2062A | [String](https://codeforces.com/problemset/problem/2062/A) | [Submission](https://codeforces.com/contest/2062/submission/303598719) | constructive algorithms, greedy, math, strings | Jan/30/2025 11:32 AM |
 | 344A | [Magnets](https://codeforces.com/problemset/problem/344/A) | [Submission](https://codeforces.com/contest/344/submission/301953646) | implementation | Jan/20/2025 12:52 PM |
 | 136A | [Presents](https://codeforces.com/problemset/problem/136/A) | [Submission](https://codeforces.com/contest/136/submission/301942166) | implementation | Jan/20/2025 10:27 AM |
 | 200B | [Drinks](https://codeforces.com/problemset/problem/200/B) | [Submission](https://codeforces.com/contest/200/submission/301936098) | implementation, math | Jan/20/2025 09:09 AM |
