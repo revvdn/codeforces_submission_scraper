@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1294C | [Product of Three Numbers](https://codeforces.com/problemset/problem/1294/C) | [Submission](https://codeforces.com/contest/1294/submission/314212879) | greedy, math, number theory | Apr/06/2025 02:47 PM |
 | 222B | [Cosmic Tables](https://codeforces.com/problemset/problem/222/B) | [Submission](https://codeforces.com/contest/222/submission/300339198) | data structures, implementation | Jan/10/2025 09:16 AM |
 | 1879C | [Make it Alternating](https://codeforces.com/problemset/problem/1879/C) | [Submission](https://codeforces.com/contest/1879/submission/285045084) | combinatorics, dp, greedy | Oct/09/2024 09:36 PM |
 | 1945D | [Seraphim the Owl](https://codeforces.com/problemset/problem/1945/D) | [Submission](https://codeforces.com/contest/1945/submission/283210318) | dp, greedy | Sep/27/2024 09:22 PM |
