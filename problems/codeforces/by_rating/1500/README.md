@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1391C | [Cyclic Permutations ](https://codeforces.com/problemset/problem/1391/C) | [Submission](https://codeforces.com/contest/1391/submission/314894234) | combinatorics, dp, graphs, math | Apr/10/2025 09:15 PM |
 | 1325C | [Ehab and Path-etic MEXs](https://codeforces.com/problemset/problem/1325/C) | [Submission](https://codeforces.com/contest/1325/submission/292630741) | constructive algorithms, dfs and similar, greedy, trees | Nov/21/2024 08:42 PM |
 | 1999F | [Expected Median](https://codeforces.com/problemset/problem/1999/F) | [Submission](https://codeforces.com/contest/1999/submission/285576514) | combinatorics, math | Oct/13/2024 11:16 AM |
 | 1876B | [Effects of Anti Pimples](https://codeforces.com/problemset/problem/1876/B) | [Submission](https://codeforces.com/contest/1876/submission/285574597) | combinatorics, number theory, sortings | Oct/13/2024 10:44 AM |
