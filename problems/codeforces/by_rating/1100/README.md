@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 287A | [IQ Test](https://codeforces.com/problemset/problem/287/A) | [Submission](https://codeforces.com/contest/287/submission/315902840) | brute force, implementation | Apr/17/2025 09:37 AM |
 | 2043B | [Digits](https://codeforces.com/problemset/problem/2043/B) | [Submission](https://codeforces.com/contest/2043/submission/299478651) | math, number theory | Jan/03/2025 09:02 PM |
 | 331C1 | [The Great Julya Calendar](https://codeforces.com/problemset/problem/331/C1) | [Submission](https://codeforces.com/contest/331/submission/293350607) | dp | Nov/26/2024 06:48 PM |
 | 2014C | [Robin Hood in Town](https://codeforces.com/problemset/problem/2014/C) | [Submission](https://codeforces.com/contest/2014/submission/286655344) | binary search, greedy, math | Oct/19/2024 02:08 PM |
