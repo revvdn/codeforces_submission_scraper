@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1056D | [Decorate Apple Tree](https://codeforces.com/problemset/problem/1056/D) | [Submission](https://codeforces.com/contest/1056/submission/316189192) | constructive algorithms, dfs and similar, dp, graphs, greedy, sortings, trees | Apr/19/2025 02:35 PM |
 | 1526C2 | [Potions (Hard Version)](https://codeforces.com/problemset/problem/1526/C2) | [Submission](https://codeforces.com/contest/1526/submission/290692703) | data structures, greedy | Nov/09/2024 07:45 PM |
 | 1957C | [How Does the Rook Move?](https://codeforces.com/problemset/problem/1957/C) | [Submission](https://codeforces.com/contest/1957/submission/285277560) | combinatorics, dp, math | Oct/11/2024 03:05 PM |
 | 371C | [Hamburgers](https://codeforces.com/problemset/problem/371/C) | [Submission](https://codeforces.com/contest/371/submission/284982613) | binary search, brute force | Oct/09/2024 10:41 AM |
