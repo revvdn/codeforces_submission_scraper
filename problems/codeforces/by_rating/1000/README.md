@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1634C | [OKEA](https://codeforces.com/problemset/problem/1634/C) | [Submission](https://codeforces.com/contest/1634/submission/316516698) | constructive algorithms | Apr/21/2025 08:42 PM |
 | 1182A | [Filling Shapes](https://codeforces.com/problemset/problem/1182/A) | [Submission](https://codeforces.com/contest/1182/submission/316346514) | dp, math | Apr/20/2025 02:15 PM |
 | 1020B | [Badge](https://codeforces.com/problemset/problem/1020/B) | [Submission](https://codeforces.com/contest/1020/submission/315901600) | brute force, dfs and similar, graphs | Apr/17/2025 09:09 AM |
 | 2037C | [Superultra's Favorite Permutation](https://codeforces.com/problemset/problem/2037/C) | [Submission](https://codeforces.com/contest/2037/submission/292050975) | constructive algorithms, greedy, math, number theory | Nov/17/2024 11:09 PM |
