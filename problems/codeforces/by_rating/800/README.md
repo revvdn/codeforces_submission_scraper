@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1482A | [Prison Break](https://codeforces.com/problemset/problem/1482/A) | [Submission](https://codeforces.com/contest/1482/submission/316518996) | math | Apr/21/2025 09:00 PM |
 | 1389A | [LCM Problem](https://codeforces.com/problemset/problem/1389/A) | [Submission](https://codeforces.com/contest/1389/submission/316517788) | constructive algorithms, greedy, math, number theory | Apr/21/2025 08:50 PM |
 | 2062A | [String](https://codeforces.com/problemset/problem/2062/A) | [Submission](https://codeforces.com/contest/2062/submission/303598719) | constructive algorithms, greedy, math, strings | Jan/30/2025 11:32 AM |
 | 344A | [Magnets](https://codeforces.com/problemset/problem/344/A) | [Submission](https://codeforces.com/contest/344/submission/301953646) | implementation | Jan/20/2025 12:52 PM |
