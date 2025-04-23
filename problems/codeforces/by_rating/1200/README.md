@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1433D | [Districts Connection](https://codeforces.com/problemset/problem/1433/D) | [Submission](https://codeforces.com/contest/1433/submission/316815506) | constructive algorithms, dfs and similar | Apr/23/2025 08:07 PM |
 | 1514B | [AND 0, Sum Big](https://codeforces.com/problemset/problem/1514/B) | [Submission](https://codeforces.com/contest/1514/submission/298967897) | bitmasks, combinatorics, math | Dec/29/2024 08:10 PM |
 | 1327B | [Princesses and Princes](https://codeforces.com/problemset/problem/1327/B) | [Submission](https://codeforces.com/contest/1327/submission/298967393) | brute force, graphs, greedy | Dec/29/2024 08:04 PM |
 | 776B | [Sherlock and his girlfriend](https://codeforces.com/problemset/problem/776/B) | [Submission](https://codeforces.com/contest/776/submission/291898450) | constructive algorithms, number theory | Nov/17/2024 02:40 PM |
