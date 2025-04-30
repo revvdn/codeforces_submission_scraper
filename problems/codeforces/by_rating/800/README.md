@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 4A | [Watermelon](https://codeforces.com/problemset/problem/4/A) | [Submission](https://codeforces.com/contest/4/submission/317846338) | brute force, math | Apr/30/2025 08:43 PM |
 | 1482A | [Prison Break](https://codeforces.com/problemset/problem/1482/A) | [Submission](https://codeforces.com/contest/1482/submission/316518996) | math | Apr/21/2025 09:00 PM |
 | 1389A | [LCM Problem](https://codeforces.com/problemset/problem/1389/A) | [Submission](https://codeforces.com/contest/1389/submission/316517788) | constructive algorithms, greedy, math, number theory | Apr/21/2025 08:50 PM |
 | 2062A | [String](https://codeforces.com/problemset/problem/2062/A) | [Submission](https://codeforces.com/contest/2062/submission/303598719) | constructive algorithms, greedy, math, strings | Jan/30/2025 11:32 AM |
