@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1613C | [Poisoned Dagger](https://codeforces.com/problemset/problem/1613/C) | [Submission](https://codeforces.com/contest/1613/submission/318625304) | binary search | May/06/2025 07:56 PM |
 | 1433D | [Districts Connection](https://codeforces.com/problemset/problem/1433/D) | [Submission](https://codeforces.com/contest/1433/submission/316815506) | constructive algorithms, dfs and similar | Apr/23/2025 08:07 PM |
 | 1514B | [AND 0, Sum Big](https://codeforces.com/problemset/problem/1514/B) | [Submission](https://codeforces.com/contest/1514/submission/298967897) | bitmasks, combinatorics, math | Dec/29/2024 08:10 PM |
 | 1327B | [Princesses and Princes](https://codeforces.com/problemset/problem/1327/B) | [Submission](https://codeforces.com/contest/1327/submission/298967393) | brute force, graphs, greedy | Dec/29/2024 08:04 PM |
