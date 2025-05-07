@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1634B | [Fortune Telling](https://codeforces.com/problemset/problem/1634/B) | [Submission](https://codeforces.com/contest/1634/submission/318736145) | bitmasks, math | May/07/2025 08:53 PM |
 | 1670C | [Where is the Pizza?](https://codeforces.com/problemset/problem/1670/C) | [Submission](https://codeforces.com/contest/1670/submission/318339853) | data structures, dfs and similar, dsu, graphs, implementation, math | May/04/2025 09:00 PM |
 | 180C | [Letter](https://codeforces.com/problemset/problem/180/C) | [Submission](https://codeforces.com/contest/180/submission/316351981) | dp | Apr/20/2025 03:04 PM |
 | 1609C | [Complex Market Analysis](https://codeforces.com/problemset/problem/1609/C) | [Submission](https://codeforces.com/contest/1609/submission/286080322) | binary search, dp, implementation, number theory, schedules, two pointers | Oct/15/2024 09:21 PM |
