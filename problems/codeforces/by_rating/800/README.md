@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 61A | [Ultra-Fast Mathematician](https://codeforces.com/problemset/problem/61/A) | [Submission](https://codeforces.com/contest/61/submission/319571621) | implementation | May/14/2025 04:32 AM |
 | 80A | [Panoramix's Prediction](https://codeforces.com/problemset/problem/80/A) | [Submission](https://codeforces.com/contest/80/submission/319571290) | brute force | May/14/2025 04:26 AM |
 | 266A | [Stones on the Table](https://codeforces.com/problemset/problem/266/A) | [Submission](https://codeforces.com/contest/266/submission/319569640) | implementation | May/14/2025 03:56 AM |
 | 4A | [Watermelon](https://codeforces.com/problemset/problem/4/A) | [Submission](https://codeforces.com/contest/4/submission/317846338) | brute force, math | Apr/30/2025 08:43 PM |
