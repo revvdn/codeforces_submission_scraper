@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 227B | [Effective Approach](https://codeforces.com/problemset/problem/227/B) | [Submission](https://codeforces.com/contest/227/submission/319589383) | implementation | May/14/2025 11:50 AM |
 | 313B | [Ilya and Queries](https://codeforces.com/problemset/problem/313/B) | [Submission](https://codeforces.com/contest/313/submission/316343423) | dp, implementation | Apr/20/2025 01:47 PM |
 | 287A | [IQ Test](https://codeforces.com/problemset/problem/287/A) | [Submission](https://codeforces.com/contest/287/submission/315902840) | brute force, implementation | Apr/17/2025 09:37 AM |
 | 2043B | [Digits](https://codeforces.com/problemset/problem/2043/B) | [Submission](https://codeforces.com/contest/2043/submission/299478651) | math, number theory | Jan/03/2025 09:02 PM |
