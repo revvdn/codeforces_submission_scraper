@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 144A | [Arrival of the General](https://codeforces.com/problemset/problem/144/A) | [Submission](https://codeforces.com/contest/144/submission/319578329) | implementation | May/14/2025 08:17 AM |
 | 233A | [Perfect Permutation](https://codeforces.com/problemset/problem/233/A) | [Submission](https://codeforces.com/contest/233/submission/319577641) | implementation, math | May/14/2025 07:58 AM |
 | 61A | [Ultra-Fast Mathematician](https://codeforces.com/problemset/problem/61/A) | [Submission](https://codeforces.com/contest/61/submission/319571621) | implementation | May/14/2025 04:32 AM |
 | 80A | [Panoramix's Prediction](https://codeforces.com/problemset/problem/80/A) | [Submission](https://codeforces.com/contest/80/submission/319571290) | brute force | May/14/2025 04:26 AM |
