@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 272A | [Dima and Friends](https://codeforces.com/problemset/problem/272/A) | [Submission](https://codeforces.com/contest/272/submission/319651549) | implementation, math | May/14/2025 08:48 PM |
 | 1051B | [Relatively Prime Pairs](https://codeforces.com/problemset/problem/1051/B) | [Submission](https://codeforces.com/contest/1051/submission/316689467) | greedy, math, number theory | Apr/22/2025 08:32 PM |
 | 1033A | [King Escape](https://codeforces.com/problemset/problem/1033/A) | [Submission](https://codeforces.com/contest/1033/submission/316521072) | dfs and similar, graphs, implementation | Apr/21/2025 09:16 PM |
 | 1634C | [OKEA](https://codeforces.com/problemset/problem/1634/C) | [Submission](https://codeforces.com/contest/1634/submission/316516698) | constructive algorithms | Apr/21/2025 08:42 PM |
