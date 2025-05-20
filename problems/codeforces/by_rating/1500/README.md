@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1426D | [Non-zero Segments](https://codeforces.com/problemset/problem/1426/D) | [Submission](https://codeforces.com/contest/1426/submission/320514508) | constructive algorithms, data structures, greedy, sortings | May/20/2025 08:13 PM |
 | 329B | [Biridian Forest](https://codeforces.com/problemset/problem/329/B) | [Submission](https://codeforces.com/contest/329/submission/316186492) | dfs and similar, shortest paths | Apr/19/2025 02:10 PM |
 | 1391C | [Cyclic Permutations ](https://codeforces.com/problemset/problem/1391/C) | [Submission](https://codeforces.com/contest/1391/submission/314894234) | combinatorics, dp, graphs, math | Apr/10/2025 09:15 PM |
 | 1325C | [Ehab and Path-etic MEXs](https://codeforces.com/problemset/problem/1325/C) | [Submission](https://codeforces.com/contest/1325/submission/292630741) | constructive algorithms, dfs and similar, greedy, trees | Nov/21/2024 08:42 PM |
