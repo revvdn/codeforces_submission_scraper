@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1931C | [Make Equal Again](https://codeforces.com/problemset/problem/1931/C) | [Submission](https://codeforces.com/contest/1931/submission/320776218) | brute force, greedy, math | May/22/2025 07:50 PM |
 | 139A | [Petr and Book](https://codeforces.com/problemset/problem/139/A) | [Submission](https://codeforces.com/contest/139/submission/320579967) | implementation | May/21/2025 09:24 AM |
 | 165A | [Supercentral Point](https://codeforces.com/problemset/problem/165/A) | [Submission](https://codeforces.com/contest/165/submission/320579394) | implementation | May/21/2025 09:13 AM |
 | 450A | [Jzzhu and Children](https://codeforces.com/problemset/problem/450/A) | [Submission](https://codeforces.com/contest/450/submission/320240325) | implementation | May/18/2025 08:30 PM |
