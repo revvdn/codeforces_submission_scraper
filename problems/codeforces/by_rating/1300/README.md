@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2025C | [New Game](https://codeforces.com/problemset/problem/2025/C) | [Submission](https://codeforces.com/contest/2025/submission/321320016) | binary search, brute force, greedy, implementation, sortings, two pointers | May/26/2025 11:50 AM |
 | 1669H | [Maximal AND](https://codeforces.com/problemset/problem/1669/H) | [Submission](https://codeforces.com/contest/1669/submission/318627937) | bitmasks, greedy, math | May/06/2025 08:18 PM |
 | 1294C | [Product of Three Numbers](https://codeforces.com/problemset/problem/1294/C) | [Submission](https://codeforces.com/contest/1294/submission/314212879) | greedy, math, number theory | Apr/06/2025 02:47 PM |
 | 222B | [Cosmic Tables](https://codeforces.com/problemset/problem/222/B) | [Submission](https://codeforces.com/contest/222/submission/300339198) | data structures, implementation | Jan/10/2025 09:16 AM |
