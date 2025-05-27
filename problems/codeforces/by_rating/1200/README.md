@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 474B | [Worms](https://codeforces.com/problemset/problem/474/B) | [Submission](https://codeforces.com/contest/474/submission/321650804) | binary search, implementation | May/27/2025 08:05 PM |
 | 1613C | [Poisoned Dagger](https://codeforces.com/problemset/problem/1613/C) | [Submission](https://codeforces.com/contest/1613/submission/318625304) | binary search | May/06/2025 07:56 PM |
 | 1433D | [Districts Connection](https://codeforces.com/problemset/problem/1433/D) | [Submission](https://codeforces.com/contest/1433/submission/316815506) | constructive algorithms, dfs and similar | Apr/23/2025 08:07 PM |
 | 1514B | [AND 0, Sum Big](https://codeforces.com/problemset/problem/1514/B) | [Submission](https://codeforces.com/contest/1514/submission/298967897) | bitmasks, combinatorics, math | Dec/29/2024 08:10 PM |
