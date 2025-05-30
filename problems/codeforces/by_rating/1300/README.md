@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 893C | [Rumor](https://codeforces.com/problemset/problem/893/C) | [Submission](https://codeforces.com/contest/893/submission/322058454) | dfs and similar, graphs, greedy | May/30/2025 08:27 PM |
 | 862B | [Mahmoud and Ehab and the bipartiteness](https://codeforces.com/problemset/problem/862/B) | [Submission](https://codeforces.com/contest/862/submission/322056510) | dfs and similar, graphs, trees | May/30/2025 08:11 PM |
 | 2025C | [New Game](https://codeforces.com/problemset/problem/2025/C) | [Submission](https://codeforces.com/contest/2025/submission/321320016) | binary search, brute force, greedy, implementation, sortings, two pointers | May/26/2025 11:50 AM |
 | 1669H | [Maximal AND](https://codeforces.com/problemset/problem/1669/H) | [Submission](https://codeforces.com/contest/1669/submission/318627937) | bitmasks, greedy, math | May/06/2025 08:18 PM |
