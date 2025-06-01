@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 277A | [Learning Languages](https://codeforces.com/problemset/problem/277/A) | [Submission](https://codeforces.com/contest/277/submission/322332874) | dfs and similar, dsu | Jun/01/2025 09:47 AM |
 | 1893A | [Anonymous Informant](https://codeforces.com/problemset/problem/1893/A) | [Submission](https://codeforces.com/contest/1893/submission/320844192) | brute force, dfs and similar, graphs, implementation | May/23/2025 10:20 AM |
 | 1634B | [Fortune Telling](https://codeforces.com/problemset/problem/1634/B) | [Submission](https://codeforces.com/contest/1634/submission/318736145) | bitmasks, math | May/07/2025 08:53 PM |
 | 1670C | [Where is the Pizza?](https://codeforces.com/problemset/problem/1670/C) | [Submission](https://codeforces.com/contest/1670/submission/318339853) | data structures, dfs and similar, dsu, graphs, implementation, math | May/04/2025 09:00 PM |
