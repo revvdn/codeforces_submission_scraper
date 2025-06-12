@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 155A | [I_love_\%username\%](https://codeforces.com/problemset/problem/155/A) | [Submission](https://codeforces.com/contest/155/submission/323996635) | brute force | Jun/12/2025 02:27 PM |
 | 248A | [Cupboards](https://codeforces.com/problemset/problem/248/A) | [Submission](https://codeforces.com/contest/248/submission/323995569) | implementation | Jun/12/2025 02:19 PM |
 | 148A | [Insomnia cure](https://codeforces.com/problemset/problem/148/A) | [Submission](https://codeforces.com/contest/148/submission/323992129) | constructive algorithms, implementation, math | Jun/12/2025 01:51 PM |
 | 144A | [Arrival of the General](https://codeforces.com/problemset/problem/144/A) | [Submission](https://codeforces.com/contest/144/submission/319578329) | implementation | May/14/2025 08:17 AM |
