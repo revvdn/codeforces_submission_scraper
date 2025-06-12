@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 148A | [Insomnia cure](https://codeforces.com/problemset/problem/148/A) | [Submission](https://codeforces.com/contest/148/submission/323992129) | constructive algorithms, implementation, math | Jun/12/2025 01:51 PM |
 | 144A | [Arrival of the General](https://codeforces.com/problemset/problem/144/A) | [Submission](https://codeforces.com/contest/144/submission/319578329) | implementation | May/14/2025 08:17 AM |
 | 233A | [Perfect Permutation](https://codeforces.com/problemset/problem/233/A) | [Submission](https://codeforces.com/contest/233/submission/319577641) | implementation, math | May/14/2025 07:58 AM |
 | 61A | [Ultra-Fast Mathematician](https://codeforces.com/problemset/problem/61/A) | [Submission](https://codeforces.com/contest/61/submission/319571621) | implementation | May/14/2025 04:32 AM |
