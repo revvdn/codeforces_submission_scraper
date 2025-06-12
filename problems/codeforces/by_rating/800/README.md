@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 104A | [Blackjack](https://codeforces.com/problemset/problem/104/A) | [Submission](https://codeforces.com/contest/104/submission/323999568) | implementation | Jun/12/2025 02:51 PM |
 | 116A | [Tram](https://codeforces.com/problemset/problem/116/A) | [Submission](https://codeforces.com/contest/116/submission/323997956) | implementation | Jun/12/2025 02:39 PM |
 | 155A | [I_love_\%username\%](https://codeforces.com/problemset/problem/155/A) | [Submission](https://codeforces.com/contest/155/submission/323996635) | brute force | Jun/12/2025 02:27 PM |
 | 248A | [Cupboards](https://codeforces.com/problemset/problem/248/A) | [Submission](https://codeforces.com/contest/248/submission/323995569) | implementation | Jun/12/2025 02:19 PM |
