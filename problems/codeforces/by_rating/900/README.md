@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 205A | [Little Elephant and Rozdil](https://codeforces.com/problemset/problem/205/A) | [Submission](https://codeforces.com/contest/205/submission/330822122) | brute force, implementation | Jul/25/2025 08:51 PM |
 | 133A | [HQ9+](https://codeforces.com/problemset/problem/133/A) | [Submission](https://codeforces.com/contest/133/submission/324023253) | implementation | Jun/12/2025 06:08 PM |
 | 1291A | [Even But Not Even](https://codeforces.com/problemset/problem/1291/A) | [Submission](https://codeforces.com/contest/1291/submission/316687540) | greedy, math, strings | Apr/22/2025 08:17 PM |
 | 2062B | [Clockwork](https://codeforces.com/problemset/problem/2062/B) | [Submission](https://codeforces.com/contest/2062/submission/303600389) | greedy, math | Jan/30/2025 11:59 AM |
