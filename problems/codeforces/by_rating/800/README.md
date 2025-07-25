@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 151A | [Soft Drinking](https://codeforces.com/problemset/problem/151/A) | [Submission](https://codeforces.com/contest/151/submission/330811622) | implementation, math | Jul/25/2025 07:42 PM |
 | 2126A | [Only One Digit](https://codeforces.com/problemset/problem/2126/A) | [Submission](https://codeforces.com/contest/2126/submission/329567627) | brute force, implementation, math | Jul/18/2025 09:50 AM |
 | 104A | [Blackjack](https://codeforces.com/problemset/problem/104/A) | [Submission](https://codeforces.com/contest/104/submission/323999568) | implementation | Jun/12/2025 02:51 PM |
 | 116A | [Tram](https://codeforces.com/problemset/problem/116/A) | [Submission](https://codeforces.com/contest/116/submission/323997956) | implementation | Jun/12/2025 02:39 PM |
