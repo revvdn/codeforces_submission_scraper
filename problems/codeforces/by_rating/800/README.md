@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 41A | [Translation](https://codeforces.com/problemset/problem/41/A) | [Submission](https://codeforces.com/contest/41/submission/331595534) | implementation, strings | Jul/30/2025 08:09 PM |
 | 34A | [Reconnaissance 2](https://codeforces.com/problemset/problem/34/A) | [Submission](https://codeforces.com/contest/34/submission/330813974) | implementation | Jul/25/2025 07:56 PM |
 | 151A | [Soft Drinking](https://codeforces.com/problemset/problem/151/A) | [Submission](https://codeforces.com/contest/151/submission/330811622) | implementation, math | Jul/25/2025 07:42 PM |
 | 2126A | [Only One Digit](https://codeforces.com/problemset/problem/2126/A) | [Submission](https://codeforces.com/contest/2126/submission/329567627) | brute force, implementation, math | Jul/18/2025 09:50 AM |
