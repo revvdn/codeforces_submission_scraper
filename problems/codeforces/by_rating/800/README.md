@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1927A | [Make it White](https://codeforces.com/problemset/problem/1927/A) | [Submission](https://codeforces.com/contest/1927/submission/344115805) | greedy, strings | Oct/17/2025 10:55 AM |
 | 41A | [Translation](https://codeforces.com/problemset/problem/41/A) | [Submission](https://codeforces.com/contest/41/submission/331595534) | implementation, strings | Jul/30/2025 08:09 PM |
 | 34A | [Reconnaissance 2](https://codeforces.com/problemset/problem/34/A) | [Submission](https://codeforces.com/contest/34/submission/330813974) | implementation | Jul/25/2025 07:56 PM |
 | 151A | [Soft Drinking](https://codeforces.com/problemset/problem/151/A) | [Submission](https://codeforces.com/contest/151/submission/330811622) | implementation, math | Jul/25/2025 07:42 PM |
