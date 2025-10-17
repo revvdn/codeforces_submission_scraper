@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1927B | [Following the String](https://codeforces.com/problemset/problem/1927/B) | [Submission](https://codeforces.com/contest/1927/submission/344116473) | constructive algorithms, greedy, strings | Oct/17/2025 11:07 AM |
 | 320A | [Magic Numbers](https://codeforces.com/problemset/problem/320/A) | [Submission](https://codeforces.com/contest/320/submission/331594806) | brute force, greedy | Jul/30/2025 08:03 PM |
 | 199A | [Hexadecimal's theorem](https://codeforces.com/problemset/problem/199/A) | [Submission](https://codeforces.com/contest/199/submission/330823210) | brute force, constructive algorithms, implementation, number theory | Jul/25/2025 08:58 PM |
 | 205A | [Little Elephant and Rozdil](https://codeforces.com/problemset/problem/205/A) | [Submission](https://codeforces.com/contest/205/submission/330822122) | brute force, implementation | Jul/25/2025 08:51 PM |
