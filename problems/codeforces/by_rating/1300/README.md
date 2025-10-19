@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1927D | [Find the Different Ones!](https://codeforces.com/problemset/problem/1927/D) | [Submission](https://codeforces.com/contest/1927/submission/344581463) | binary search, brute force, data structures, dp, dsu, greedy, two pointers | Oct/19/2025 10:54 AM |
 | 893C | [Rumor](https://codeforces.com/problemset/problem/893/C) | [Submission](https://codeforces.com/contest/893/submission/322058454) | dfs and similar, graphs, greedy | May/30/2025 08:27 PM |
 | 862B | [Mahmoud and Ehab and the bipartiteness](https://codeforces.com/problemset/problem/862/B) | [Submission](https://codeforces.com/contest/862/submission/322056510) | dfs and similar, graphs, trees | May/30/2025 08:11 PM |
 | 2025C | [New Game](https://codeforces.com/problemset/problem/2025/C) | [Submission](https://codeforces.com/contest/2025/submission/321320016) | binary search, brute force, greedy, implementation, sortings, two pointers | May/26/2025 11:50 AM |
