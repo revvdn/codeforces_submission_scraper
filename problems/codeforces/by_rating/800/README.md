@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2146A | [Equal Occurrences](https://codeforces.com/problemset/problem/2146/A) | [Submission](https://codeforces.com/contest/2146/submission/350567390) | brute force, greedy, implementation | Nov/25/2025 01:21 PM |
 | 2154A | [Notelock](https://codeforces.com/problemset/problem/2154/A) | [Submission](https://codeforces.com/contest/2154/submission/350488096) | greedy, two pointers | Nov/24/2025 08:25 PM |
 | 2167A | [Square?](https://codeforces.com/problemset/problem/2167/A) | [Submission](https://codeforces.com/contest/2167/submission/347180869) | math, sortings | Nov/03/2025 08:36 AM |
 | 1927A | [Make it White](https://codeforces.com/problemset/problem/1927/A) | [Submission](https://codeforces.com/contest/1927/submission/344115805) | greedy, strings | Oct/17/2025 10:55 AM |
