@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2154B | [Make it Zigzag](https://codeforces.com/problemset/problem/2154/B) | [Submission](https://codeforces.com/contest/2154/submission/350558520) | constructive algorithms, greedy | Nov/25/2025 11:09 AM |
 | 1927C | [Choose the Different Ones!](https://codeforces.com/problemset/problem/1927/C) | [Submission](https://codeforces.com/contest/1927/submission/344505056) | brute force, greedy, math | Oct/18/2025 08:35 PM |
 | 43A | [Football](https://codeforces.com/problemset/problem/43/A) | [Submission](https://codeforces.com/contest/43/submission/331597907) | strings | Jul/30/2025 08:26 PM |
 | 1931C | [Make Equal Again](https://codeforces.com/problemset/problem/1931/C) | [Submission](https://codeforces.com/contest/1931/submission/320776218) | brute force, greedy, math | May/22/2025 07:50 PM |
