@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2180A | [Carnival Wheel](https://codeforces.com/problemset/problem/2180/A) | [Submission](https://codeforces.com/contest/2180/submission/354331093) | brute force, number theory | Dec/20/2025 09:48 PM |
 | 2146A | [Equal Occurrences](https://codeforces.com/problemset/problem/2146/A) | [Submission](https://codeforces.com/contest/2146/submission/350567390) | brute force, greedy, implementation | Nov/25/2025 01:21 PM |
 | 2154A | [Notelock](https://codeforces.com/problemset/problem/2154/A) | [Submission](https://codeforces.com/contest/2154/submission/350488096) | greedy, two pointers | Nov/24/2025 08:25 PM |
 | 2167A | [Square?](https://codeforces.com/problemset/problem/2167/A) | [Submission](https://codeforces.com/contest/2167/submission/347180869) | math, sortings | Nov/03/2025 08:36 AM |
