@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 318A | [Even Odds](https://codeforces.com/problemset/problem/318/A) | [Submission](https://codeforces.com/contest/318/submission/357337164) | math | Jan/11/2026 09:07 PM |
 | 1927B | [Following the String](https://codeforces.com/problemset/problem/1927/B) | [Submission](https://codeforces.com/contest/1927/submission/344116473) | constructive algorithms, greedy, strings | Oct/17/2025 11:07 AM |
 | 320A | [Magic Numbers](https://codeforces.com/problemset/problem/320/A) | [Submission](https://codeforces.com/contest/320/submission/331594806) | brute force, greedy | Jul/30/2025 08:03 PM |
 | 199A | [Hexadecimal's theorem](https://codeforces.com/problemset/problem/199/A) | [Submission](https://codeforces.com/contest/199/submission/330823210) | brute force, constructive algorithms, implementation, number theory | Jul/25/2025 08:58 PM |
