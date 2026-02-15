@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 2195B | [Heapify 1](https://codeforces.com/problemset/problem/2195/B) | [Submission](https://codeforces.com/contest/2195/submission/363113252) | implementation, sortings | Feb/15/2026 10:23 PM |
 | 318A | [Even Odds](https://codeforces.com/problemset/problem/318/A) | [Submission](https://codeforces.com/contest/318/submission/357337164) | math | Jan/11/2026 09:07 PM |
 | 1927B | [Following the String](https://codeforces.com/problemset/problem/1927/B) | [Submission](https://codeforces.com/contest/1927/submission/344116473) | constructive algorithms, greedy, strings | Oct/17/2025 11:07 AM |
 | 320A | [Magic Numbers](https://codeforces.com/problemset/problem/320/A) | [Submission](https://codeforces.com/contest/320/submission/331594806) | brute force, greedy | Jul/30/2025 08:03 PM |
