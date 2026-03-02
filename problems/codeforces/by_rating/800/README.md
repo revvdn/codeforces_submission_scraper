@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1996B | [Scale](https://codeforces.com/problemset/problem/1996/B) | [Submission](https://codeforces.com/contest/1996/submission/365025532) | greedy, implementation | Mar/02/2026 07:30 AM |
 | 2195A | [Sieve of Erato67henes](https://codeforces.com/problemset/problem/2195/A) | [Submission](https://codeforces.com/contest/2195/submission/363131466) | math, number theory | Feb/15/2026 10:38 PM |
 | 2180A | [Carnival Wheel](https://codeforces.com/problemset/problem/2180/A) | [Submission](https://codeforces.com/contest/2180/submission/354331093) | brute force, number theory | Dec/20/2025 09:48 PM |
 | 2146A | [Equal Occurrences](https://codeforces.com/problemset/problem/2146/A) | [Submission](https://codeforces.com/contest/2146/submission/350567390) | brute force, greedy, implementation | Nov/25/2025 01:21 PM |
