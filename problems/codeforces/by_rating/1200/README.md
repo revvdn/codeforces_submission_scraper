@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1996C | [Sort](https://codeforces.com/problemset/problem/1996/C) | [Submission](https://codeforces.com/contest/1996/submission/365286179) | dp, greedy, sortings, strings | Mar/04/2026 08:01 AM |
 | 902B | [Coloring a Tree](https://codeforces.com/problemset/problem/902/B) | [Submission](https://codeforces.com/contest/902/submission/322060041) | dfs and similar, dsu, greedy | May/30/2025 08:39 PM |
 | 474B | [Worms](https://codeforces.com/problemset/problem/474/B) | [Submission](https://codeforces.com/contest/474/submission/321650804) | binary search, implementation | May/27/2025 08:05 PM |
 | 1613C | [Poisoned Dagger](https://codeforces.com/problemset/problem/1613/C) | [Submission](https://codeforces.com/contest/1613/submission/318625304) | binary search | May/06/2025 07:56 PM |
