@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 1991B | [AND Reconstruction](https://codeforces.com/problemset/problem/1991/B) | [Submission](https://codeforces.com/contest/1991/submission/365284278) | bitmasks, constructive algorithms, greedy | Mar/04/2026 07:10 AM |
 | 224A | [Parallelepiped](https://codeforces.com/problemset/problem/224/A) | [Submission](https://codeforces.com/contest/224/submission/320836401) | brute force, geometry, math | May/23/2025 07:49 AM |
 | 227B | [Effective Approach](https://codeforces.com/problemset/problem/227/B) | [Submission](https://codeforces.com/contest/227/submission/319589383) | implementation | May/14/2025 11:50 AM |
 | 313B | [Ilya and Queries](https://codeforces.com/problemset/problem/313/B) | [Submission](https://codeforces.com/contest/313/submission/316343423) | dp, implementation | Apr/20/2025 01:47 PM |
