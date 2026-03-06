@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 415A | [Mashmokh and Lights](https://codeforces.com/problemset/problem/415/A) | [Submission](https://codeforces.com/contest/415/submission/365607622) | implementation | Mar/06/2026 09:12 PM |
 | 1990A | [Submission Bait](https://codeforces.com/problemset/problem/1990/A) | [Submission](https://codeforces.com/contest/1990/submission/365156431) | brute force, games, greedy, sortings | Mar/03/2026 07:46 AM |
 | 2195B | [Heapify 1](https://codeforces.com/problemset/problem/2195/B) | [Submission](https://codeforces.com/contest/2195/submission/363113252) | implementation, sortings | Feb/15/2026 10:23 PM |
 | 318A | [Even Odds](https://codeforces.com/problemset/problem/318/A) | [Submission](https://codeforces.com/contest/318/submission/357337164) | math | Jan/11/2026 09:07 PM |
