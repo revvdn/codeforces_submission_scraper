@@ -2,6 +2,7 @@
 
 | # | Title | Solution | Tags | Submitted |
 | - | ----- | -------- | ---- | --------- |
+| 757B | [Bash's Big Day](https://codeforces.com/problemset/problem/757/B) | [Submission](https://codeforces.com/contest/757/submission/373772306) | greedy, math, number theory | May/07/2026 08:47 AM |
 | 1927E | [Klever Permutation](https://codeforces.com/problemset/problem/1927/E) | [Submission](https://codeforces.com/contest/1927/submission/344582858) | constructive algorithms, math, two pointers | Oct/19/2025 11:19 AM |
 | 277A | [Learning Languages](https://codeforces.com/problemset/problem/277/A) | [Submission](https://codeforces.com/contest/277/submission/322332874) | dfs and similar, dsu | Jun/01/2025 09:47 AM |
 | 1893A | [Anonymous Informant](https://codeforces.com/problemset/problem/1893/A) | [Submission](https://codeforces.com/contest/1893/submission/320844192) | brute force, dfs and similar, graphs, implementation | May/23/2025 10:20 AM |
