@@ -8,7 +8,6 @@ from templates.templates import (
 )
 
 def update_readme(rating, pid, api_accepted, problems_info, base_dir) :
-    #step 4
     '''
     final readme construct, building and insert the fetched data into the table
     based on the data that have been sorted in readme_construct module
