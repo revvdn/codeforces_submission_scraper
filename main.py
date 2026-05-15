@@ -208,6 +208,52 @@ def construct_readme(readme_path, all_pids, api_accepted, problems_info) :
 
 def fetch_data(handle) :
     #step 2
+    logging.info("fetch problem")
+    resp = requests.get(API_PROBLEMSET)
+    resp.raise_for_status()
+    data = resp.json()
+    
+    if data['status'] != 'OK' :
+        raise Exception("failed to fetch")
+    
+    problem_info = {}
+    for detail in data['result']['problems'] :
+        if 'contestId' in detail and 'index' in detail :
+            pid = f"{detail['contestId']}{detail['index']}"
+            problem_info[pid] = {
+                'name' : detail['name'],
+                'rating' : detail.get('rating'),
+                'tags' : ", ".join(detail.get('tags ', []))
+            }
+    
+    logging.info(f"fetch submission for {handle} ")
+    resp = requests.get(API_USER_STATUS, params={'handle': handle})
+    resp.raise_for_status()
+    data = resp.json()
+    if data['status'] != 'OK' :
+        raise Exception("failed to fetch user status")
+    
+    submission = data['result']
+    logging.info(f"fetch {len(submission)} total from cf")
+
+    '''
+    corner case when the user have multiple OK verdict in one same problems,
+    then i will keep the latest OK verdict of the problem
+    '''
+
+    accepted = {}
+    for sub in submission :
+        if sub.get('verdict') == 'OK' and 'problem' in sub and 'contestId' in sub['problem'] and 'index' in sub['problem'] :
+            pid = f"{sub['problem']['contestId']}{sub['problem']['index']}"
+
+            if pid not in problem_info or problem_info[pid]['rating'] is None :
+                continue
+
+            if pid not in accepted or sub['creationTimeSecond'] > accepted[pid]['creationTimeSeconds'] :
+                accepted[pid] = sub
+
+    logging.info(f"found {len(accepted)} problems")
+    return accepted, problem_info
 
 
 def main() :
