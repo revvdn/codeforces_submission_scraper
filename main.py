@@ -211,11 +211,21 @@ TABLE_TEMPLATE = (
     "| --- | ----- | ------ | ---- | ---------- |"
 )
 
-INITIAL_TABLE_TEMPLATE = """
-## Submission Table
-| # | Title | Rating | Tags | Submission |
-| --- | ----- | ------ | ---- | ---------- |
-"""
+INITIAL_TABLE_TEMPLATE = (
+"## Submission Table\n"
+"| # | Title | Rating | Tags | Submission |\n"
+"| --- | ----- | ------ | ---- | ---------- |"
+)
+
+def ensure_git_repo(base_dir) :
+    git_dir = os.path.join(base_dir, ".git")
+
+    if not os.path.exists(git_dir) :
+        logging.info("git repo not found. initialize git repo ...")
+
+        subprocess.run(["git", "init"], cwd=base_dir, check=True)
+
+        logging.info("git repo was initialized")
 
 def commit_problem(pid, pinfo, sub, base_dir, rating) :
     #step 5
@@ -435,7 +445,10 @@ def main() :
     args = parser.parse_args()
 
     #find the project local location, as the reference to make the readme file
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    ensure_git_repo(base_dir)
+
     readme_path = os.path.join(base_dir, "README.md")
 
     #fetch the data from the cf api
@@ -479,6 +492,7 @@ def main() :
 
         commit_problem(pid, pinfo, sub, base_dir, rating)
 
+   
     logging.info(f"success to fetch {len(time_new_pid)} problems")
 
 if __name__ == "__main__" :
