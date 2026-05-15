@@ -1,4 +1,4 @@
-README_TEMPLATE = """'
+README_TEMPLATE = """
 
 made with [vanvest](https://github.com/revvdn/codeforces_submission_scraper.git)
 

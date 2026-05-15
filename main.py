@@ -217,7 +217,7 @@ def main() :
     parser.add_argument(
         "handle", help="yout codeforces handle :"
     )
-    
+
     args = parser.parse_args()
 
     base_dir = os.path.dirname(
@@ -273,13 +273,6 @@ def main() :
             base_dir
         )
 
-        construct_readme(
-            readme_path, 
-            new_pid, 
-            api_accepted, 
-            problems_info
-        )
-
         commit_problem(
             pid, 
             pinfo, 
@@ -291,6 +284,14 @@ def main() :
     logging.info(
         f"success to fetch {len(time_new_pid)} problems"
     )
+
+    construct_readme(
+        readme_path, 
+        new_pid, 
+        api_accepted, 
+        problems_info
+    )
+
 
 if __name__ == "__main__" :
     main()
