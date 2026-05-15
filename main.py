@@ -197,33 +197,121 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 API_USER_STATUS = "https://codeforces.com/api/user.status" #base link 
 API_PROBLEMSET = "https://codeforces.com/api/problemset.problems" #base link
 
+README_TEMPLATE = """
+| Platform | Count |
+| --- | --- |
+| Codeforces | 0 |
+| **Total** | **0** |
+"""
+
+TABLE_TEMPLATE = """
+| # | Title | Rating | Tags | Submission |
+| --- | ----- | ------ | ---- | ---------- |
+"""
+
+INITIAL_TABLE_TEMPLATE = """
+## Submission Table
+| # | Title | Rating | Tags | Submission |
+| --- | ----- | ------ | ---- | ---------- |
+"""
+
 def commit_problem(pid, pinfo, sub, base_dir, rating) :
     #step 5
 
-def update_readme(rating, pids, api_accepted, problems_info, base_dir) :
+def update_readme(rating, pid, api_accepted, problems_info, base_dir) :
     #step 4
 
-def construct_readme(readme_path, all_pids, api_accepted, problems_info) :
+def construct_readme(readme_path, all_pid, api_accepted, problems_info) :
     #step 3
+    '''
+    based on my case, i already have readme.md file before, so this code will reconstruct the previous readme
+    but in some case the user doesn't have the readme before, then make the new readme file 
+    '''
+    if not os.path.exists(readme_path) :
+        with open(readme_path, 'w', encoding='utf-8') as f :
+            f.write(README_TEMPLATE)
+
+    with open(readme_path, 'r', encoding='utf-8') as f :
+        lines = f.read().split('\n')
+    
+    cf_count = len(all_pid)
+    sorted_pid = sorted(all_pid, key=lambda p: (problems_info[p]['rating'], -api_accepted[p]['creationTimeSeconds']))
+
+    out_line = []
+    skip_table = False
+    detail_found = False
+    
+    for line in lines :
+        if skip_table :
+            if line.strip() == '' or line.strip().startswith('|') :
+                continue
+            skip_table = False
+        
+        if "## Submission Table" in line :
+            out_line.append(line)
+            out_line.append("")
+            out_line.append(TABLE_TEMPLATE)
+            for p in sorted_pid :
+                sub = api_accepted[p]
+                info = problems_info[p]
+                date_str = datetime.fromtimestamp(sub['creationTimeSeconds']).strftime('%b/%d/%Y %I:%M %p')
+                prob_url = f"https://codeforces.com/problemset/problem/{sub['problem']['contestId']}/{sub['problem']['index']}"
+                sub_url = f"https://codeforces.com/contest/{sub['problem']['contestId']}/submission/{sub['id']}"
+                out_line.append(f"| {p} | [{info['name']}]({prob_url}) | {info['rating']} | {info['tags']} | [{date_str}]({sub_url}) |")
+            out_line.append("")
+            skip_table = True
+            detail_found = True
+            continue
+
+        if re.match(r'^\|\s*Codeforces\s*\|', line.strip()) :
+            out_line.append(f"| Codeforces | {cf_count} |")
+            continue
+
+        if re.match(r'^\|\s*\*\*Total\*\*\s*\|', line.strip()) :
+            m = re.search(r'\|\s*\*\*Total\*\*\s*\|\s*\*\*(\d+)\*\*\s*\|', line)
+            if m :
+                out_line.append(f"| **Total** | **{cf_count}** |")
+            else :
+                out_line.append(line)
+            continue
+        out_line.append(line)
+
+    if not detail_found :
+        if out_line and out_line[-1].strip() != '' :
+            out_line.append('')
+            out_line.append(INITIAL_TABLE_TEMPLATE)
+            for p in sorted_pid :
+                sub = api_accepted[p]
+                info = problems_info[p]
+                date_str = datetime.fromtimestamp(sub['creationTimeSeconds']).strftime('%b/%d/%Y %I:%M %p')
+                prob_url = f"https://codeforces.com/problemset/problem/{sub['problem']['contestId']}/{sub['problem']['index']}"
+                sub_url = f"https://codeforces.com/contest/{sub['problem']['contestId']}/submission/{sub['id']}"
+                out_line.append(f"| {p} | [{info['name']}]({prob_url}) | {info['rating']} | {info['tags']} | [{date_str}]({sub_url}) |")
+
+    with open(readme_path, 'w', encoding='utf-8') as f :
+        f.write('\n'.join(out_line).rstrip() + '\n')  
 
 def fetch_data(handle) :
     #step 2
     logging.info("fetch problem")
-    resp = requests.get(API_PROBLEMSET)
+    resp = requests.get(API_PROBLEMSET) 
     resp.raise_for_status()
-    data = resp.json()
+    data = resp.json() #convertinh
     
+    #validate ap status
     if data['status'] != 'OK' :
         raise Exception("failed to fetch")
     
+    #store all the problem metadata by looping all the problem
     problem_info = {}
     for detail in data['result']['problems'] :
         if 'contestId' in detail and 'index' in detail :
-            pid = f"{detail['contestId']}{detail['index']}"
+            pid = f"{detail['contestId']}{detail['index']}" #for the problem id
+            #store problem metadata
             problem_info[pid] = {
                 'name' : detail['name'],
-                'rating' : detail.get('rating'),
-                'tags' : ", ".join(detail.get('tags ', []))
+                'rating' : detail.get('rating'), #corner case when the problem or the contest not comiing from the cf (gym type or special contest)
+                'tags' : ", ".join(detail.get('tags', []))
             }
     
     logging.info(f"fetch submission for {handle} ")
@@ -239,6 +327,17 @@ def fetch_data(handle) :
     '''
     corner case when the user have multiple OK verdict in one same problems,
     then i will keep the latest OK verdict of the problem
+    for example the data is 
+
+    4A |  100
+    4A |  200
+    4A |  300
+
+    if the data goes like that , then i will stored the latest which is the biggest 
+    4A | 300
+
+    for some reason, i have think that a person who try 2 or more different code to solve.
+    sorry if this tool is just taking one of your solution :)
     '''
 
     accepted = {}
@@ -249,7 +348,7 @@ def fetch_data(handle) :
             if pid not in problem_info or problem_info[pid]['rating'] is None :
                 continue
 
-            if pid not in accepted or sub['creationTimeSecond'] > accepted[pid]['creationTimeSeconds'] :
+            if pid not in accepted or sub['creationTimeSeconds'] > accepted[pid]['creationTimeSeconds'] :
                 accepted[pid] = sub
 
     logging.info(f"found {len(accepted)} problems")
@@ -281,41 +380,41 @@ def main() :
         logging.error(f"Error fetching data : {e}")
         sys.exit(1)
 
-    #existing_pids = set(), i write this just in case the user have any solution file before using this, but i think it's not necessary
-    new_pids = set(api_accepted.keys())
+    #existing_pid = set(), i write this just in case the user have any solution file before using this, but i think it's not necessary
+    new_pid = set(api_accepted.keys())
 
     '''
-    if not new_pids :
+    if not new_pid :
         logging.info("no new problems to fetch")
         sys.exit(0)
     '''#again just in case if user had the solution before
 
     #sorted it based on the submission time 
-    chronological_new_pids = sorted(
-        list(new_pids), 
+    time_new_pid = sorted(
+        list(new_pid), 
         key=lambda p: api_accepted[p]['creationTimeSeconds']
     )
 
-    # current_known_pids = set(new_pids) doesn't need this anymore
-    pids_by_rating = {}
+    # current_known_pid = set(new_pid) doesn't need this anymore
+    pid_by_rating = {}
 
-    for pid in chronological_new_pids :
+    for pid in time_new_pid :
         sub = api_accepted[pid]
         pinfo = problems_info[pid]
         rating = pinfo['rating']
 
         logging.info(f"process {pid} {rating : {rating}}")
 
-       # current_known_pids.add(pid)
-        pids_by_rating.setdefault(rating, set()).add(pid)
+       # current_known_pid.add(pid)
+        pid_by_rating.setdefault(rating, set()).add(pid)
 
-        update_readme(rating, pids_by_rating[rating], api_accepted, problems_info, base_dir)
+        update_readme(rating, pid_by_rating[rating], api_accepted, problems_info, base_dir)
 
-        construct_readme(readme_path, new_pids, api_accepted, problems_info)
+        construct_readme(readme_path, new_pid, api_accepted, problems_info)
 
         commit_problem(pid, pinfo, sub, base_dir, rating)
 
-    logging.info(f"success to fetch {len(chronological_new_pids)} problems")
+    logging.info(f"success to fetch {len(time_new_pid)} problems")
 
 if __name__ == "__main__" :
     main()
