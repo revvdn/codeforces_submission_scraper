@@ -183,255 +183,26 @@ after things get done
 TIME TO CODE YEAH :)
 '''
 
-import os
-import re
-import sys
-import argparse
-import logging
-import requests
-import subprocess
-from datetime import datetime
-
-logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-
-API_USER_STATUS = "https://codeforces.com/api/user.status" #base link 
-API_PROBLEMSET = "https://codeforces.com/api/problemset.problems" #base link
-
-README_TEMPLATE = """
-# codeforces stats
-
-| Platform | Count |
-| --- | --- |
-| Codeforces | 0 |
-| **Total** | **0** |
-"""
-
-TABLE_TEMPLATE = (
-    "| # | Title | Rating | Tags | Submission |\n"
-    "| --- | ----- | ------ | ---- | ---------- |"
+import os 
+import sys 
+import argparse 
+import logging  
+from core.fetcher import fetch_data
+from core.readme import (
+    construct_readme,
+    update_readme
+)
+from core.git_manage import (
+    ensure_git_repo,
+    commit_problem
 )
 
-INITIAL_TABLE_TEMPLATE = (
-"## Submission Table\n"
-"| # | Title | Rating | Tags | Submission |\n"
-"| --- | ----- | ------ | ---- | ---------- |"
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(levelname)s: %(message)s"
 )
-
-def ensure_git_repo(base_dir) :
-    git_dir = os.path.join(base_dir, ".git")
-
-    if not os.path.exists(git_dir) :
-        logging.info("git repo not found. initialize git repo ...")
-
-        subprocess.run(["git", "init"], cwd=base_dir, check=True)
-
-        logging.info("git repo was initialized")
-
-def commit_problem(pid, pinfo, sub, base_dir, rating) :
-    #step 5
-    '''
-    i have been thinking that it's possible for someone who want to push the problem into github, but
-    all of the submission have their own date right, to overcome this i would set the git timestamp based on the real submission time in codeforces
-    '''
-    submission_date = datetime.fromtimestamp(sub['creationTimeSeconds']).isoformat()
-    env = os.environ.copy()
-    env["GIT_AUTHOR_DATE"] = submission_date
-    env["GIT_COMMITTER_DATE"] = submission_date
-
-    by_rating = f"problems/codeforces/by_rating/{rating}/README.md"
-    subprocess.run(["git", "add", "README.md", by_rating], cwd = base_dir, check=True)
-
-    msg = f"add codeforces {pid} - {pinfo['name']}"
-    subprocess.run(["git", "commit", "-m", msg], cwd=base_dir, env=env, check=True)
-    logging.info(f"committed {pid} with timestamp {submission_date}")
-
-def update_readme(rating, pid, api_accepted, problems_info, base_dir) :
-    #step 4
-    '''
-    final readme construct, building and insert the fetched data into the table
-    based on the data that have been sorted in readme_construct module
-    This module would make the folder based on the rating e.g 800, 900, 1000
-    and the structure would be
-
-    problems/
-    └── codeforces/
-        └── by_rating/
-            ├── 800/
-            │   └── README.md
-            ├── 900/
-            │   └── README.md
-            ├── 1200/
-            │   └── README.md
-
-    '''
-
-    #build the directory path
-    dir_path = os.path.join(base_dir, "problems", "codeforces", "by_rating", str(rating))
-    os.makedirs(dir_path, exist_ok=True)
-    readme_path = os.path.join(dir_path, "README.md")
-
-    #sort problem id or pid
-    sorted_pid = sorted(pid, key=lambda p: -api_accepted[p]['creationTimeSeconds'])
-
-    #generating rows table
-    lines = [f"# Codeforces Rating {rating}\n", "| # | Title | Solution | Tags | Submitted |", "| - | ----- | -------- | ---- | --------- |"]
-    for p in sorted_pid :
-        sub = api_accepted[p]
-        info = problems_info[p]
-        date_str = datetime.fromtimestamp(sub['creationTimeSeconds']).strftime('%b/%d/%Y %I:%M %p')
-        prob_url = f"https://codeforces.com/problemset/problem/{sub['problem']['contestId']}/{sub['problem']['index']}"
-        sub_url = f"https://codeforces.com/contest/{sub['problem']['contestId']}/submission/{sub['id']}"
-        lines.append(f"| {p} | [{info['name']}]({prob_url}) | [Submission]({sub_url}) | {info['tags']} | {date_str} |")
-
-    #write the result
-    with open(readme_path, 'w', encoding='utf-8') as f :
-        f.write('\n'.join(lines) + '\n')
-
-def construct_readme(readme_path, all_pid, api_accepted, problems_info) :
-    #step 3
-    '''
-    based on my case, i already have readme.md file before, so this code will reconstruct the previous readme
-    but in some case the user doesn't have the readme before, then make the new readme file 
-    '''
-    if not os.path.exists(readme_path) :
-        with open(readme_path, 'w', encoding='utf-8') as f :
-            f.write(README_TEMPLATE)
-
-    with open(readme_path, 'r', encoding='utf-8') as f :
-        lines = f.read().split('\n')
-    
-    '''
-    this section will count number of problem and sort based on the rating (ascending order) and
-    submission time (descending)
-
-    why ? just to make the table looks organized and easy to read, if the user want to see the specific rating thay can easliy find them 
-    rather than not sorted
-    '''
-    cf_count = len(all_pid)
-    sorted_pid = sorted(all_pid, key=lambda p: (problems_info[p]['rating'], -api_accepted[p]['creationTimeSeconds']))
-
-    out_line = []
-    skip_table = False
-    detail_found = False
-    
-    #table construct by parse the old readme (if exist) or the new and some generating logic to make sure the table look magnificient XD
-    for line in lines :
-        if skip_table :
-            if line.strip() == '' or line.strip().startswith('|') :
-                continue
-            skip_table = False
-        
-        if "## Submission Table" in line :
-            out_line.append(line)
-            out_line.append("")
-            out_line.append(TABLE_TEMPLATE)
-            for p in sorted_pid :
-                sub = api_accepted[p]
-                info = problems_info[p]
-                date_str = datetime.fromtimestamp(sub['creationTimeSeconds']).strftime('%b/%d/%Y %I:%M %p')
-                prob_url = f"https://codeforces.com/problemset/problem/{sub['problem']['contestId']}/{sub['problem']['index']}"
-                sub_url = f"https://codeforces.com/contest/{sub['problem']['contestId']}/submission/{sub['id']}"
-                out_line.append(f"| {p} | [{info['name']}]({prob_url}) | {info['rating']} | {info['tags']} | [{date_str}]({sub_url}) |")
-            out_line.append("")
-            skip_table = True
-            detail_found = True
-            continue
-
-        if re.match(r'^\|\s*Codeforces\s*\|', line.strip()) :
-            out_line.append(f"| Codeforces | {cf_count} |")
-            continue
-
-        if re.match(r'^\|\s*\*\*Total\*\*\s*\|', line.strip()) :
-            m = re.search(r'\|\s*\*\*Total\*\*\s*\|\s*\*\*(\d+)\*\*\s*\|', line)
-            if m :
-                out_line.append(f"| **Total** | **{cf_count}** |")
-            else :
-                out_line.append(line)
-            continue
-        out_line.append(line)
-
-    if not detail_found :
-        if out_line and out_line[-1].strip() != '' :
-            out_line.append('')
-            out_line.append(INITIAL_TABLE_TEMPLATE)
-            for p in sorted_pid :
-                sub = api_accepted[p]
-                info = problems_info[p]
-                date_str = datetime.fromtimestamp(sub['creationTimeSeconds']).strftime('%b/%d/%Y %I:%M %p')
-                prob_url = f"https://codeforces.com/problemset/problem/{sub['problem']['contestId']}/{sub['problem']['index']}"
-                sub_url = f"https://codeforces.com/contest/{sub['problem']['contestId']}/submission/{sub['id']}"
-                out_line.append(f"| {p} | [{info['name']}]({prob_url}) | {info['rating']} | {info['tags']} | [{date_str}]({sub_url}) |")
-
-    #apply and write into the readme
-    with open(readme_path, 'w', encoding='utf-8') as f :
-        f.write('\n'.join(out_line).rstrip() + '\n')  
-
-def fetch_data(handle) :
-    #step 2
-    logging.info("fetch problem")
-    resp = requests.get(API_PROBLEMSET) 
-    resp.raise_for_status()
-    data = resp.json() #convertinh
-    
-    #validate ap status
-    if data['status'] != 'OK' :
-        raise Exception("failed to fetch")
-    
-    #store all the problem metadata by looping all the problem
-    problem_info = {}
-    for detail in data['result']['problems'] :
-        if 'contestId' in detail and 'index' in detail :
-            pid = f"{detail['contestId']}{detail['index']}" #for the problem id
-            #store problem metadata
-            problem_info[pid] = {
-                'name' : detail['name'],
-                'rating' : detail.get('rating'), #corner case when the problem or the contest not comiing from the cf (gym type or special contest)
-                'tags' : ", ".join(detail.get('tags', []))
-            }
-    
-    logging.info(f"fetch submission for {handle} ")
-    resp = requests.get(API_USER_STATUS, params={'handle': handle})
-    resp.raise_for_status()
-    data = resp.json()
-    if data['status'] != 'OK' :
-        raise Exception("failed to fetch user status")
-    
-    submission = data['result']
-    logging.info(f"fetch {len(submission)} total from cf")
-
-    '''
-    corner case when the user have multiple OK verdict in one same problems,
-    then i will keep the latest OK verdict of the problem
-    for example the data is 
-
-    4A |  100
-    4A |  200
-    4A |  300
-
-    if the data goes like that , then i will stored the latest which is the biggest 
-    4A | 300
-
-    for some reason, i have think that a person who try 2 or more different code to solve.
-    sorry if this tool is just taking one of your solution :)
-    '''
-
-    accepted = {}
-    for sub in submission :
-        if sub.get('verdict') == 'OK' and 'problem' in sub and 'contestId' in sub['problem'] and 'index' in sub['problem'] :
-            pid = f"{sub['problem']['contestId']}{sub['problem']['index']}"
-
-            if pid not in problem_info or problem_info[pid]['rating'] is None :
-                continue
-
-            if pid not in accepted or sub['creationTimeSeconds'] > accepted[pid]['creationTimeSeconds'] :
-                accepted[pid] = sub
-
-    logging.info(f"found {len(accepted)} problems")
-    return accepted, problem_info
-
 
 def main() :
-    #step 1 / main
     '''
     This module will get the user handle by asking them, then try to fetch and get the submission data 
     from the codeforces based on what i have been explain above
@@ -439,61 +210,87 @@ def main() :
     the total submission is enourmously high because not every single porblem got AC in the first try,
     and Who's gonna display the non AC submission right :)
     '''
-    #get the handle 
-    parser = argparse.ArgumentParser(description="codeforces submission scraper")
-    parser.add_argument("handle", help="yout codeforces handle :")
+    parser = argparse.ArgumentParser(
+        description="codeforces submission scraper"
+    )
+
+    parser.add_argument(
+        "handle", help="yout codeforces handle :"
+    )
+    
     args = parser.parse_args()
 
-    #find the project local location, as the reference to make the readme file
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(
+        os.path.abspath(__file__)
+    )
     
     ensure_git_repo(base_dir)
 
     readme_path = os.path.join(base_dir, "README.md")
 
-    #fetch the data from the cf api
     try :
         api_accepted, problems_info = fetch_data(args.handle)
     except Exception as e :
         logging.error(f"Error fetching data : {e}")
         sys.exit(1)
 
-    #existing_pid = set(), i write this just in case the user have any solution file before using this, but i think it's not necessary
     new_pid = set(api_accepted.keys())
 
     '''
     if not new_pid :
         logging.info("no new problems to fetch")
         sys.exit(0)
-    '''#again just in case if user had the solution before
+    '''#just in case if user had the solution before
 
-    #sorted it based on the submission time 
     time_new_pid = sorted(
         list(new_pid), 
         key=lambda p: api_accepted[p]['creationTimeSeconds']
     )
 
-    # current_known_pid = set(new_pid) doesn't need this anymore
     pid_by_rating = {}
 
     for pid in time_new_pid :
+        
         sub = api_accepted[pid]
         pinfo = problems_info[pid]
         rating = pinfo['rating']
 
-        logging.info(f"process {pid} rating : {rating}")
+        logging.info(
+            f"process {pid} rating : {rating}"
+        )
 
-       # current_known_pid.add(pid)
-        pid_by_rating.setdefault(rating, set()).add(pid)
+        #current_known_pid.add(pid)
+        pid_by_rating.setdefault(
+            rating, 
+            set()
+        ).add(pid)
 
-        update_readme(rating, pid_by_rating[rating], api_accepted, problems_info, base_dir)
+        update_readme(
+            rating, 
+            pid_by_rating[rating], 
+            api_accepted, 
+            problems_info, 
+            base_dir
+        )
 
-        construct_readme(readme_path, new_pid, api_accepted, problems_info)
+        construct_readme(
+            readme_path, 
+            new_pid, 
+            api_accepted, 
+            problems_info
+        )
 
-        commit_problem(pid, pinfo, sub, base_dir, rating)
+        commit_problem(
+            pid, 
+            pinfo, 
+            sub, 
+            base_dir, 
+            rating
+        )
 
-   
-    logging.info(f"success to fetch {len(time_new_pid)} problems")
+    logging.info(
+        f"success to fetch {len(time_new_pid)} problems"
+    )
 
 if __name__ == "__main__" :
     main()

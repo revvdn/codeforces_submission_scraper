@@ -1,27 +1,28 @@
 import logging
 import requests
 
-API_USER_STATUS = "https://codeforces.com/api/user.status" #base link 
-
-API_PROBLEMSET = "https://codeforces.com/api/problemset.problems" #base link
-
+API_USER_STATUS = "https://codeforces.com/api/user.status"  
+API_PROBLEMSET = "https://codeforces.com/api/problemset.problems" 
 
 def fetch_data(handle) :
-    #step 2
+
     logging.info("fetch problem")
     resp = requests.get(API_PROBLEMSET) 
     resp.raise_for_status()
-    data = resp.json() #convertinh
+    data = resp.json()
     
-    #validate ap status
+    #validate status
     if data['status'] != 'OK' :
         raise Exception("failed to fetch")
     
     #store all the problem metadata by looping all the problem
     problem_info = {}
     for detail in data['result']['problems'] :
+
         if 'contestId' in detail and 'index' in detail :
+
             pid = f"{detail['contestId']}{detail['index']}" #for the problem id
+            
             #store problem metadata
             problem_info[pid] = {
                 'name' : detail['name'],
@@ -29,8 +30,15 @@ def fetch_data(handle) :
                 'tags' : ", ".join(detail.get('tags', []))
             }
     
-    logging.info(f"fetch submission for {handle} ")
-    resp = requests.get(API_USER_STATUS, params={'handle': handle})
+    logging.info(
+        f"fetch submission for {handle} "
+    )
+
+    resp = requests.get(
+        API_USER_STATUS, 
+        params={'handle': handle}
+    )
+
     resp.raise_for_status()
     data = resp.json()
     if data['status'] != 'OK' :
@@ -58,6 +66,7 @@ def fetch_data(handle) :
     accepted = {}
     for sub in submission :
         if sub.get('verdict') == 'OK' and 'problem' in sub and 'contestId' in sub['problem'] and 'index' in sub['problem'] :
+    
             pid = f"{sub['problem']['contestId']}{sub['problem']['index']}"
 
             if pid not in problem_info or problem_info[pid]['rating'] is None :
@@ -66,5 +75,7 @@ def fetch_data(handle) :
             if pid not in accepted or sub['creationTimeSeconds'] > accepted[pid]['creationTimeSeconds'] :
                 accepted[pid] = sub
 
-    logging.info(f"found {len(accepted)} problems")
+    logging.info(
+        f"found {len(accepted)} problems"
+    )
     return accepted, problem_info
