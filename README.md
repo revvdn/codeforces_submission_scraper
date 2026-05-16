@@ -33,7 +33,7 @@ git --version
 ```
 
 **start the installation**
-clone the repository :
+git clone the repository :
 ```bash
 https://github.com/revvdn/codeforces_submission_scraper.git
 ```
