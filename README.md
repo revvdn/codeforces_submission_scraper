@@ -62,5 +62,5 @@ python main.py tourist
 
 ## future work
 1. **code complexity** - current code are having worst time complexity, but it can be improved later
-2. **more platform support** - this quite complex because each platform has different method and need long time to find
+2. **more platform support** - this quite complex because each platform has different method and need long time to breakdown
 3. **submission analisys** - big feature under progress
