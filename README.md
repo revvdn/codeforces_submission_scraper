@@ -40,7 +40,7 @@ git clone https://github.com/revvdn/codeforces_submission_scraper.git
 
 move into the tools directory :
 ```bash
-cd cf_scraper
+cd codeforcse_submission_scraper
 ```
 
 install the required dependencies :
@@ -52,12 +52,17 @@ pip install -r requirements.txt
 
 after installing, run the following command to start :
 ```bash
-python main.py <your_handle>
+python main.py <your_handle> --fast
 ```
 
 example :
 ```bash
 python main.py tourist
+```
+
+after successfully run the tools, your result would be in 
+```bash
+codeforces_submission_craper/CF_STATS.md
 ```
 
 ## future work
