@@ -3,8 +3,7 @@ import re
 from datetime import datetime
 from templates.templates import (
     README_TEMPLATE,
-    TABLE_TEMPLATE,
-    INITIAL_TABLE_TEMPLATE
+    TABLE_TEMPLATE
 )
 
 def update_readme(rating, pid, api_accepted, problems_info, base_dir) :
@@ -26,7 +25,6 @@ def update_readme(rating, pid, api_accepted, problems_info, base_dir) :
 
     '''
 
-    #build the directory path
     dir_path = os.path.join(
         base_dir, 
         "problems", 
@@ -38,16 +36,13 @@ def update_readme(rating, pid, api_accepted, problems_info, base_dir) :
     os.makedirs(dir_path, exist_ok=True)
     readme_path = os.path.join(dir_path, "README.md")
 
-    #sort problem id or pid
-    sorted_pid = sorted(
-        pid, 
-        key=lambda p: -api_accepted[p]['creationTimeSeconds']
-    )
-
-    #generating rows table
-    lines = [f"# Codeforces Rating {rating}\n", "| # | Title | Solution | Tags | Submitted |", "| - | ----- | -------- | ---- | --------- |"]
-    for p in sorted_pid :
+    lines = [f"# Codeforces Rating {rating}\n",
+                "| # | Title | Solution | Tags | Submitted |",
+                "| - | ----- | -------- | ---- | --------- |"
+            ]
     
+    for p in pid :
+        
         sub = api_accepted[p]
         info = problems_info[p]
     
@@ -55,9 +50,9 @@ def update_readme(rating, pid, api_accepted, problems_info, base_dir) :
             sub['creationTimeSeconds']
         ).strftime('%b/%d/%Y %I:%M %p')
         
-        prob_url = f"https://codeforces.com/problemset/problem/{sub['problem']['contestId']}/{sub['problem']['index']}"
+        prob_url = f"https://codeforces.com/problemset/problem/{sub['contestId']}/{sub['index']}"
         
-        sub_url = f"https://codeforces.com/contest/{sub['problem']['contestId']}/submission/{sub['id']}"
+        sub_url = f"https://codeforces.com/contest/{sub['contestId']}/submission/{sub['id']}"
     
         lines.append(f"| {p} | [{info['name']}]({prob_url}) | [Submission]({sub_url}) | {info['tags']} | {date_str} |")
 
@@ -77,8 +72,37 @@ def construct_readme(readme_path, all_pid, api_accepted, problems_info) :
         with open(readme_path, 'w', encoding='utf-8') as f :
             f.write(README_TEMPLATE)
 
+    sorted_pid = sorted(
+        all_pid,
+        key=lambda p: (
+            problems_info[p]["rating"],
+            -api_accepted[p]["creationTimeSeconds"]
+        )
+    )
+
+    table_line = [TABLE_TEMPLATE]
+
+    for p in sorted_pid :
+
+        sub = api_accepted[p]
+        info = problems_info[p]
+
+        date_str = datetime.fromtimestamp(
+            sub["creationTimeSeconds"]
+        ).strftime("%b/%d/%Y %I:%M %p")
+
+        prob_url = (f"https://codeforces.com/problemset/problem/{sub['contestId']}/{sub['index']}")
+
+        sub_url = (f"https://codeforces.com/contest/{sub['contestId']}/submission/{sub['id']}")
+
+        table_line.append(
+            f"| {p} | [{info['name']}]({prob_url}) | {info['rating']} | {info['tags']} | [{date_str}]({sub_url})"
+        )
+
+    table_content = "\n".join(table_line)
+
     with open(readme_path, 'r', encoding='utf-8') as f :
-        lines = f.read().split('\n')
+        content = f.read()
     
     '''
     this section will count number of problem and sort based on the rating (ascending order) and
@@ -88,13 +112,35 @@ def construct_readme(readme_path, all_pid, api_accepted, problems_info) :
     rather than not sorted
     '''
     cf_count = len(all_pid)
+    '''    
     sorted_pid = sorted(
         all_pid, 
         key=lambda p: (problems_info[p]['rating'], 
                        -api_accepted[p]['creationTimeSeconds']
                     )
     )
+    '''
+    content = content.replace(
+        "| codeforeces | 0 |",
+        f"| codeforces | {cf_count} |"
+    )
 
+    content = content.replace(
+        "| **total** | **0** |",
+        f"| **total** | **{cf_count}** |"
+    )
+
+    start_marker = "<!-- START_TABLE -->"
+    end_marker = "<!-- END_TABLE -->"
+
+    before = content.split(start_marker)[0]
+    after = content.split(end_marker)[1]
+
+    new_content = (
+        before + start_marker + "\n" + table_content + "\n" + end_marker + after
+    )
+
+    '''
     out_line = []
     skip_table = False
     detail_found = False
@@ -172,7 +218,7 @@ def construct_readme(readme_path, all_pid, api_accepted, problems_info) :
                 sub_url = f"https://codeforces.com/contest/{sub['problem']['contestId']}/submission/{sub['id']}"
         
                 out_line.append(f"| {p} | [{info['name']}]({prob_url}) | {info['rating']} | {info['tags']} | [{date_str}]({sub_url}) |")
+    '''
 
-    #apply and write into the readme
     with open(readme_path, 'w', encoding='utf-8') as f :
-        f.write('\n'.join(out_line).rstrip() + '\n')  
+        f.write(new_content)  

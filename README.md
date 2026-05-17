@@ -33,9 +33,9 @@ git --version
 ```
 
 **start the installation**
-git clone the repository :
+clone the repository :
 ```bash
-https://github.com/revvdn/codeforces_submission_scraper.git
+git clone https://github.com/revvdn/codeforces_submission_scraper.git
 ```
 
 move into the tools directory :
