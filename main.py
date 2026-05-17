@@ -120,18 +120,19 @@ def main() :
     )
 
     if args.fast : 
-        
+        '''        
         subprocess.run(
             ["git", "add", "."],
             cwd = base_dir,
             check=True
         )
-
+        
         subprocess.run(
             ["git", "commit", "-m", f"add {len(new_pid)} problem"],
             cwd=base_dir,
             check=True
         )
+        '''
 
     else :
         
