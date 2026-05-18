@@ -1,5 +1,7 @@
 # competitive programming submission fetcher
 
+![Made with Python](https://shields.io)
+
 fetch all your submission from competitive programming platform and commit it on github
 
 ## highlights
